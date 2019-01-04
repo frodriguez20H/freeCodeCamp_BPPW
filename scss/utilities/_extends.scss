@@ -1,0 +1,73 @@
+%links {
+    text-decoration: none;
+  }
+  
+  %img {
+    @include flexbox();
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  %primary-headline {
+    font-weight: bold;
+    @include flexbox();
+    color: $color-primary;
+    font-family: $font-nav-text;
+    align-content: center;
+  }
+  
+  %secondary-headline {
+    font-weight: 100;
+    @include flexbox();
+    align-items: flex-start;
+    font-size: 1rem;
+    font-family: $font-nav-text;
+    color: $color-main;
+  }
+  
+  %nav {
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-text-nav;
+  }
+  
+  %btn {
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-input-buttons;
+    border: none;
+    font-size: 0.9em;
+    width: 95%;
+    @include mediaq($break-d){
+      width: grids_width(1.75, 1);
+    }
+    height: 3em;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2em auto;
+    @include mediaq($break-d){
+      margin: 2em 1.5em;
+    }
+  }
+  
+  %form {
+    @include flexbox();
+    flex-direction: column;
+    font-family: $font-input-buttons;
+    color: $color-text-nav;
+  }
+  
+  %grid_font {
+    @include flexbox();
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $font-input-buttons;
+    color: $color-main;
+    font-weight: bold;
+  }

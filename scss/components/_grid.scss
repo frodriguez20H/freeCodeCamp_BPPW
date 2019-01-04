@@ -1,0 +1,73 @@
+.wrapper {
+    display: flex;
+    // height: 100vh;
+}
+
+.main {
+    padding: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.intro {
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @include flexbox();
+}
+
+#welcome-section {
+    background-color: azure;
+    height: 80vh;
+    padding-top: 10rem;
+    @include mediaq($break-d) {
+        margin-top: 3rem;
+    }
+}
+
+.thumbs-projects {
+    padding-top: 5rem;
+}
+
+.thumbs-projects h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.thumb-project {
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    @include mediaq($break-m){
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
+        grid-auto-flow: column;
+    }
+}
+
+.thumb-item{
+    background-color: gray;
+    justify-self: center;
+    border: 1px solid blue;
+    box-shadow: 5px 10px #88888856;
+}
+
+.title-thumb{
+    text-align: center;
+    color: white;
+    padding: .25rem;
+    height: 2rem;
+}
+
+
+

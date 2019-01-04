@@ -1,0 +1,22 @@
+//------------------------
+//Fonts
+//-----------------------
+$font-nav-text: 'Helvetica Neue', 'Lato', sans-serif; //main-nav and text font
+$font-input-buttons: 'Nunito Sans', sans-serif; //inputs and buttons font
+
+// -------------------------
+//Colors
+//--------------------------
+$color-primary: #58cce1; //hover and lines color
+$color-text-nav: #5f5f5f;
+$color-nav-bg: hsl(197, 90%, 81%);
+$color-main: #808080;
+$color-highlights-loginbutton: #44c1ca;
+
+//------------------------
+//Breakpoints
+//------------------------
+$break-m: 480px;
+$break-md:481px;
+$break-t: 769px;
+$break-d: 1024px;

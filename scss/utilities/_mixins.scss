@@ -1,0 +1,30 @@
+@mixin mediaq($dscreen) {
+  $mob: 480;
+  $tab: 796;
+
+  @if $dscreen <= $mob {
+    @media screen and (max-width: $dscreen) {
+      @content;
+    }
+  } @else if $dscreen > $mob {
+    @media screen and (min-width: $dscreen) {
+      @content;
+    }
+  }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
