@@ -1,4 +1,4 @@
-.nav {
+nav {
   display: flex;
   flex: 0 0 auto;
   background-color: $color-nav-bg;
@@ -14,6 +14,10 @@
   }
   @include mediaq($break-d) {
     justify-content: center;
+  }
+  & ul{
+    position: fixed;
+    width: 100%;
   }
   &-item {
     @extend %nav;
